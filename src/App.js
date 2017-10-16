@@ -12,12 +12,16 @@ import CreateLogger from 'redux-logger';
 
 
 import HelloWorld from "./components/HelloWorld";
+import Header from "./containers/Header";
+import {View} from "react-native";
 
 
 export default class App extends Component {
   render() {
     return (
-      <HelloWorld/>
+        <View>
+            <Header value="The_Choice"/>
+        </View>
     );
   }
 }
